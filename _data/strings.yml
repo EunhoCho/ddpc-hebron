@@ -1,0 +1,113 @@
+# Strings
+# =======================================================================================
+# This file contains all soft-coded strings of the theme.
+# You can edit them here if you want to change the wording of certain phrases,
+# e.g. maybe you prefer "Fetching…" to "Loading…", etc.
+#
+# You can also use this to "translate" the theme into different langauges,
+# but note that this may not work in all situations,
+# especially for languages that differ significantly from English.
+
+# Free version
+# ---------------------------------------------------------------------------------------
+home:                  Home
+pages:                 Pages
+posts:                 게시글
+about:                 정보
+related_posts:         관련 게시글
+other_projects:        다른 프로젝트
+comments:              댓글
+jump_to:               Jump to
+navigation:            Navigation
+social:                Social
+links:                 링크
+pagination:            Pagination
+newer:                 앞으로
+older:                 뒤로
+forward:               앞으로
+back:                  뒤로
+permalink:             Permalink
+permalink_icon:        content-hash
+templates:             템플릿
+present:               present
+toc:                   목차
+note:                  노트
+description:           설명
+search:                검색
+search_placeholder:    검색어를 입력해주세요
+
+loading:               Loading…
+redirecting:           Redirecting…
+
+continue_reading:      >
+  Continue reading <!--post_title-->
+
+cookies_banner:
+  text:                >
+    This site uses cookies. [Cookies Policy](/cookies-policy/).
+  okay:                Okay
+
+not_found:
+  title:               '404: Page Not Found'
+  message:             |
+    Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.
+    <!--home_link--> to try finding it again.
+  home_link:           Head back home
+
+offline:
+  title:               'You are Offline'
+  message:             |
+    Sorry, but you appear to be offline and this page has not been prepared for offline viewing.
+    <!--home_link--> to try finding another page.
+  home_link:           Head back home
+
+error:
+  title:               Error
+  message:             |
+    Sorry, an error occurred while loading <!--link-->.
+
+# Separators
+# ---------------------------------------------------------------------------------------
+posted:                'Posted'
+colon:                 ':'
+separator:             '|'
+category_start:        'in '
+category_spearator:    ' / '
+tag_start:             'on '
+tag_separator:         ', '
+from_to_separator:     '–'
+
+# Date formats
+# ---------------------------------------------------------------------------------------
+date_formats:
+  post:                '%Y %b %d'
+  related_post:        '%Y %b %d'
+  list_group_by:       '%Y'
+  list_entry:          '%b %d'
+  project:             '%Y'
+  projects_group_by:   '%Y'
+  resume:              '%Y %b'
+
+
+# PRO Version
+# ---------------------------------------------------------------------------------------
+# If you don't own the PRO version of Hydejack, modifying these will have no effect.
+
+tinyletter:
+  title:               Commercial break
+  label:               이메일
+  placeholder:         이메일 주소를 입력하세요.
+  button:              구독
+  message:             |
+    Pay the *iron price* for this theme by adding yourself to the mailing list.
+    Receive development updates, advanced tutorials,
+    and anything else I can come up with as it relates to **Hydejack**.
+
+    <!--form-->
+
+    No 3rd party products, no spam. Emails handled by [Tinyletter](https://tinyletter.com/)
+    {:.faded}
+
+welcome:
+  more_projects:       See <!--projects_title--> for more
+  more_posts:          See <!--posts_title--> for more

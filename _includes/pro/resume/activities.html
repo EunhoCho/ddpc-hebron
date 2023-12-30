@@ -1,0 +1,30 @@
+{% if resume.volunteer.size > 0 %}
+<section>
+  <div class="npb">
+  <h2 id="activities" class="h3 hr-bottom">
+    {{ strings.resume.activities | default:"Activities" }}
+    <span class="symbol {{ icons.volunteer | default:'icon-earth' }}"></span>
+  </h2>
+  {% for act in resume.activities %}
+  <section class="no-page-break">
+    <header class="{% unless forloop.first %}mt2{% endunless %}">
+      {% if act.date.size > 0 %}
+        <p class="faded">
+          <time datetime="{{ act.date | date_to_xmlschema }}">{{ act.date | date:from_to_format }}</time>
+        </p>
+      {% endif %}
+      <h3 class="h4 faded">
+        {% capture position %}<span class="bc">{{ act.position }}</span>{% endcapture %}
+        {% capture venue %}{% include components/link.html title=act.venue href=act.website span_class="bc" %}{% endcapture %}
+        {{ strings.act.volunteer_title
+          | default:"<!--position--> at <!--venue-->"
+          | replace:"<!--position-->", position
+          | replace:"<!--venue-->", venue
+        }}
+      </h3>
+    </header>
+  </section>
+  {% if forloop.first %}</div>{% endif %}
+  {% endfor %}
+</section>
+{% endif %}
