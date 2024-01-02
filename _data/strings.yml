@@ -40,7 +40,7 @@ loading:               Loading…
 redirecting:           Redirecting…
 
 continue_reading:      >
-  Continue reading <!--post_title-->
+  <!--post_title-->
 
 cookies_banner:
   text:                >
@@ -71,22 +71,22 @@ error:
 posted:                'Posted'
 colon:                 ':'
 separator:             '|'
-category_start:        'in '
+category_start:        '- '
 category_spearator:    ' / '
-tag_start:             'on '
+tag_start:             '- '
 tag_separator:         ', '
 from_to_separator:     '–'
 
 # Date formats
 # ---------------------------------------------------------------------------------------
 date_formats:
-  post:                '%Y %b %d'
-  related_post:        '%Y %b %d'
-  list_group_by:       '%Y'
-  list_entry:          '%b %d'
-  project:             '%Y'
-  projects_group_by:   '%Y'
-  resume:              '%Y %b'
+  post:                '%Y년 %m월 %d일'
+  related_post:        '%Y년 %m월 %d일'
+  list_group_by:       '%Y년'
+  list_entry:          '%m월 %d일'
+  project:             '%Y년'
+  projects_group_by:   '%Y년'
+  resume:              '%Y년 %m월'
 
 
 # PRO Version

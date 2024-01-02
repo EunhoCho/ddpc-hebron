@@ -42,5 +42,27 @@ layout: base
   {{ content }}
 </article>
 
-{% include components/dingbat.html %}
-{% include body/comments.html %}
+{% if page.recent_jubo %}
+  <h3>최근 주보</h3>
+  <ul class="related-posts">
+    {% assign posts = site.categories["jubo"] %}
+    {% assign date_formats  = site.data.strings.date_formats               %}
+    {% assign list_entry    = date_formats.list_entry    | default:"%d %b" %}
+    {% for post in posts %}
+      {% include_cached components/post-list-item.html post=post format=list_entry %}
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{% if page.recent_photo %}
+  <h3>사진첩</h3>
+  {% assign posts = site.categories["photos"] %}
+  <div class="columns columns-break">
+    {% for post in posts limit:3 %}
+      {% assign featured = page.featured | default:post.featured %}
+      <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">
+        {% include_cached pro/post-card.html post=post featured=featured %}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}

@@ -6,6 +6,8 @@ no_link_title: false
 no_excerpt: false
 hide_image: false
 cover: false
+recent_jubo: true
+recent_photo: true
 ---
 
 > “헤브론이 그니스 사람 여분네의 아들 갈렙의 기업이 되어 오늘까지 이르렀으니 이는 그가 이스라엘의 하나님 여호와를 온전히 좆았음이라 (수 14:14)”
