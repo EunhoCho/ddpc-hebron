@@ -1,0 +1,80 @@
+1. 주보
+- jubo/_posts 폴더 안에 yyyy-mm-dd-주보.md 라는 이름으로 파일을 만든다. (txt 파일 안됨)
+- 맨 위에 
+
+---
+layout: post
+title: "yyyy년 mm월 dd일 청년부 주보"
+category: jubo
+sitemap: false
+---
+
+<button class="btn btn-sm btn-primary mt1" onclick="location.href='/assets/img/jubo/yyyymmdd.jpg'"> 이미지로 보기 </button>
+
+
+를 그대로 적는다.
+
+- 내용물을 적는다.
+  - 지금 이 매뉴얼 처럼 '-'를 활용해서 적는다.
+  - 하위에 넣고 싶은 글이 있다면, 이 메뉴얼 처럼 앞에 두 칸 띄어쓰기 하고 '-'를 적는다.
+
+- ddpc-hebron 폴더로 돌아온다.
+- assets/img/jubo 안에 주보 사진을 yyyymmdd.jpg 형태로 저장한다. (jpg가 아니라 png 인 경우, yyyy-mm-dd-주보.md안에서도 jpg를 png로 바꿔줘야 함)
+
+
+
+2. 사진
+- photos/y2024/_posts 폴더 안에 yyyy-mm-dd-제목.md 라는 이름으로 파일을 만든다. (연도가 다르면 다른 연도로)
+- 맨 위에
+
+---
+layout: post
+title: 제목
+category: yYYYY
+sitemap: false
+image: /assets/img/photos/YYYY/제목.jpg
+hide_image: true
+---
+
+를 그대로 적는다.
+
+- admin@hebron.ddpc.or.kr로 구글 로그인 한다.
+- 구글 포토에 들어가서 앨범을 만든다.
+- 만든 앨범에 사진을 전부 추가한다. (업로드 시, 저장용량 절약을 선택한다.)
+- 업로드가 완료 된 뒤, 오른 쪽 위 공유 버튼을 누르고, 아래의 링크 만들기를 눌러 링크를 만든다.
+- 만들어진 링크를 복사한다.
+- https://www.publicalbum.org/blog/embedding-google-photos-albums 에 들어간다.
+- 2) Create code to embed album 항목에 링크 삽입하는 곳에 복사한 링크를 입력한다.
+- Create Embed Code를 클릭한다.
+- Carousel only를 체크한다.
+- Copy Code to Clipboard를 클릭한다.
+- 복사된 코드를 제일 밑에 입력한다.
+
+- ddpc-hebron 폴더로 돌아온다.
+- assets/img/photos/YYYY/ 안에 주보 사진을 제목.jpg 형태로 저장한다. (jpg가 아니라 png 인 경우, yyyy-mm-dd-제목.md안에서도 jpg를 png로 바꿔줘야 함)
+
+
+
+3. 메뉴바 변경
+- _featured_categories 폴더에 들어가면, 다양한 md 파일이 있다.
+- 파일 내부는 이렇게 생겼다.
+
+---
+layout: list/grid
+title: XXXX
+slug: xxxx
+menu: true
+submenu: true/false
+order: XX
+redirect_to: XXX (없을 수도 있음)
+---
+
+layout: 주보 게시판 같은 list 형태 or 사진첩 같은 grid 형태 선택
+title: 메뉴바에 뜨는 제목 (한국어 가능)
+slug: 주소창에 뜨는 메뉴 이름 (영어 or 숫자, 첫글자 무조건 영어로 시작해야함)
+menu: 무조건 true
+submenu: 사진첩같이 하위 메뉴가 있는 경우 true, 아니면 false
+order: 메뉴바에 뜨는 순서. 작은 숫자일 수록 위에 배치.
+redirect_to: 외부 링크인 경우 여기에 주소 적기.
+
+- 잘 수정한 뒤에 저장하면 반영된다.

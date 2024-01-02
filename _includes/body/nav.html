@@ -48,7 +48,9 @@
         </li>
       {% else %}
         <li>
-          <a href="{{ node.redirect_to }}" class="sidebar-nav-item external">{{ node.title }}</a>
+		  <div class="list-wrapper">
+            <a href="{{ node.redirect_to }}" class="sidebar-nav-item external">{{ node.title }}</a>
+		  </div>
         </li>
       {% endunless %}
     {% endfor %}

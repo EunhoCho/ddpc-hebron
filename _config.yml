@@ -1,3 +1,10 @@
+# Add links to the sidebar.
+menu:
+#   - title: 주보
+#     url:   /jubo/
+#   - title: 사진첩
+#     url:   /photos/
+
 # Config
 # ========================================================================================
 
@@ -38,13 +45,6 @@ author:
   email: hebron@hebron.ddpc.or.kr
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
-
-# Add links to the sidebar.
-menu:
-#   - title:            주보
-#     url:              /jubo/
-#   - title:            About
-#     url:              /about/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
