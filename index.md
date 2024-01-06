@@ -30,9 +30,15 @@ recent_photo: true
 ### 섬기는 사람들
   - 지도: 홍현의 전도사
   - 부장: 김연권 안수집사
-  - 간사: 김경태 집사
+  - 간사: 김경태 집사, 고영규 집사
   - 임원
 	- 회장: 문수진 청년
 	- 총무: 강다은 청년
 	- 회계: 조은호 청년
 	- 서기: 김소정 청년
+
+### 헤브론 신규 리더 모집
+  - 2024년 (3월~) 헤브론 청년부의 진/새가족 리더를 모집합니다.
+  - 은혜로운 섬김의 자리와 따듯한 리더 공동체로 초대합니다 :)
+
+<button class="btn btn-sm btn-primary mt1" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSda3J58YvqC-rw6mgdstYi2si-fGk3TW6WdzbSkiv4eYhdmQw/viewform'"> 신규 리더 신청 </button>

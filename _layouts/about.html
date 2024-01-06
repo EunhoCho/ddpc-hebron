@@ -48,7 +48,7 @@ layout: base
     {% assign posts = site.categories["jubo"] %}
     {% assign date_formats  = site.data.strings.date_formats               %}
     {% assign list_entry    = date_formats.list_entry    | default:"%d %b" %}
-    {% for post in posts %}
+    {% for post in posts limit:3 %}
       {% include_cached components/post-list-item.html post=post format=list_entry %}
     {% endfor %}
   </ul>
